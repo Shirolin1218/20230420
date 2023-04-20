@@ -13,25 +13,38 @@ calculateBtn.addEventListener("click", function () {
     let input1Num = input1.valueAsNumber;
     let input2Num = input2.valueAsNumber;
     let operator = operation.value;
+    let answer = 0;
     console.log(input1Num, input2Num);
-    if (operator == "add") {
-        let answer = input1Num + input2Num;
-        result.textContent = answer;
-        return;
+    // if (operator === "add") {
+    //     answer = (input1Num + input2Num);
+    // }
+    // if (operator === "sub") {
+    //     answer = (input1Num - input2Num);
+    // }
+    // if (operator === "mult") {
+    //     answer = (input1Num * input2Num);
+    // }
+    // if (operator === "div") {
+    //     answer = (input1Num / input2Num);
+    // }
+    switch (operator) {
+        case "add": {
+            answer = (input1Num + input2Num);
+            break;
+        }
+        case "sub": {
+            answer = (input1Num - input2Num);
+            break;
+        }
+        case "mult": {
+            answer = (input1Num * input2Num);
+            break;
+        }
+        case "div": {
+            answer = (input1Num / input2Num);
+            break;
+        }
     }
-    if (operator == "sub") {
-        let answer = input1Num - input2Num;
-        result.textContent = answer;
-        return;
-    }
-    if (operator == "mult") {
-        let answer = input1Num * input2Num;
-        result.textContent = answer;
-        return;
-    }
-    if (operator == "div") {
-        let answer = input1Num / input2Num;
-        result.textContent = answer;
-        return;
-    }
+    result.textContent = answer;
+    return;
 });
