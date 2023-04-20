@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <h1>簡易計算機</h1>
+    </header>
+    <div class="formula text-nowrap p-5 d-flex justify-content-center align-items-center">
+        <input type="number" class="input1 rounded-2">
+        <select class="operation m-3 p-1">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mult">×</option>
+            <option value="div">÷</option>
+        </select>
+        <input type="number" class="input2 rounded-2">
+        <h2 class="equal m-3">=</h2>
+        <h2 class="result m-3">answer</h2>
+    </div>
+    <div class="btn-area p-2 d-flex justify-content-center align-items-center">
+        <button type="button" class="calculate-btn btn btn-primary">計算</button>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+</html>
